@@ -4,19 +4,19 @@ import java.util.Arrays;
 
 public class WildCardExample {
 	
-	public static void registerCourse( Course<?> course ) {
+	/*public static void registerCourse( Course<?> course ) {// 전부다 불러옴
 	
 		System.out.println(course.getName() + "수강생: " + Arrays.toString(course.getStudents()));
 	}
-	public static void registerCourseStudent( Course<? extends Student> course ) {
+	public static void registerCourseStudent( Course<? extends Student> course ) {// Student와 HighStudent만 불러옴
 		System.out.println(course.getName() + "수강생: " + Arrays.toString(course.getStudents()));
 	}
-	public static void registerCourseWorker( Course<? super Worker> course ) {
+	public static void registerCourseWorker( Course<? super Worker> course ) {//Worker 와 person만 불러옴
 		System.out.println(course.getName() + "수강생: " + Arrays.toString(course.getStudents()));
 	}
 	
-	public static void main(String[] args) {
-		Course<Person> personCourse = new Course<Person>("일반인 과정", 5);
+	  public static void main(String[] args) {
+		Course<Person> personCourse = new Course<Person>("일반인 과정", 5); // 배열이 5개 생성됨
 		personCourse.add(new Person("일반인"));
 		personCourse.add(new Worker("직장인"));
 		personCourse.add(new Student("학생"));
@@ -35,16 +35,19 @@ public class WildCardExample {
 		registerCourse(personCourse);
 		registerCourse(workerCourse);
 		registerCourse(studentCourse);
-		registerCourse(highStudentCourse);
+		registerCourse(highstudentCourse);
+		
 		System.out.println();
 		
 		registerCourse(studentCourse);
-		registerCourse(highStudentCourse);
+		registerCourse(highstudentCourse);
+		
 		System.out.println();
+		
 		registerCourseWorker(personCourse);
 		registerCourseWorker(workerCourse);
 		
-	}
+	}*/
 	
 
 }

@@ -1,5 +1,5 @@
 package chap13.six;
 
-public class HighStudent {
+/*public class HighStudent extends Student{
 
-}
+}*/
